@@ -1,0 +1,15 @@
+# Unicode conversion see: http://itpro.cz/juniconv/
+
+BigBlueButtonZimlet_label = BigBlueButton
+BigBlueButtonZimlet_slogan = G\u00F6r\u00FCnt\u00FCl\u00FC Konu\u015Fma, Sohbet.
+
+BigBlueButtonZimlet_joinHostMeeting = Toplant\u0131ya Kat\u0131l
+BigBlueButtonZimlet_addMeetingDetails = Toplant\u0131 Ba\u011Flant\u0131s\u0131n\u0131 Ekle
+
+BigBlueButtonZimlet_default_passwords = Moderator ve Kat\u0131l\u0131mc\u0131 parolalar\u0131n\u0131 belirleyebilirsiniz.<br>De\u011Fi\u015Fiklikler yeni toplant\u0131 i\u00E7in ge\u00E7erlidir, \u00F6nceden planlananlar de\u011Fi\u015Fmez.
+BigBlueButtonZimlet_moderator_password = Moderator Parolas\u0131
+BigBlueButtonZimlet_attendee_password = Kat\u0131l\u0131mc\u0131 Parolas\u0131
+BigBlueButtonZimlet_password_required = L\u00FCtfen Moderator ve Kat\u0131l\u0131mc\u0131 i\u00E7in parola belirleyin
+
+BigBlueButtonZimlet_Meeting_Message = Toplant\u0131ya kat\u0131lmak i\u00E7in:\r\n[meetinglink]\r\n\r\nKat\u0131l\u0131mc\u0131 olarak kullanaca\u011F\u0131n\u0131z parola:\r\n[password]\r\n
+BigBlueButtonZimlet_set_defaults = Sonraki toplant\u0131lar i\u00E7in varsay\u0131lan yap

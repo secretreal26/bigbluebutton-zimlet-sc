@@ -194,7 +194,7 @@ public class BigBlueButton extends ExtensionHttpHandler {
                             //Should always run just once, as meetingId is PK in SQL.
                             while (meeting.next()) {
                                 meetingFound = true;
-                                bbbRequest("create", "meetingID=" + meeting.getString("meetingId") + "&name=Zimbra&attendeePW=" + meeting.getString("attendeePW") + "&moderatorPW=" + meeting.getString("moderatorPW"));
+                                bbbRequest("create", "meetingID=" + meeting.getString("meetingId") + "&name=VRmeeting&attendeePW=" + meeting.getString("attendeePW") + "&moderatorPW=" + meeting.getString("moderatorPW"));
 
                                 try {
                                     //req.getParameter throws nullpointer when not specified, then the else block would not get called. To-do rewrite
@@ -335,7 +335,7 @@ public class BigBlueButton extends ExtensionHttpHandler {
 
             byte[] encoded = Files.readAllBytes(Paths.get("/opt/zimbra/lib/ext/bigbluebutton/page.css"));
             resp.getOutputStream().print(new String(encoded, StandardCharsets.UTF_8));
-            resp.getOutputStream().print("</style><title>Zimbra BigBlueButton Meeting</title>");
+            resp.getOutputStream().print("</style><title>VR Meeting</title>");
             if (!"".equals(message)) {
                 message = message.concat("<br><br>");
             }
@@ -355,7 +355,7 @@ public class BigBlueButton extends ExtensionHttpHandler {
 
             byte[] encoded = Files.readAllBytes(Paths.get("/opt/zimbra/lib/ext/bigbluebutton/page.css"));
             resp.getOutputStream().print(new String(encoded, StandardCharsets.UTF_8));
-            resp.getOutputStream().print("</style><title>Zimbra BigBlueButton Meeting</title>");
+            resp.getOutputStream().print("</style><title>VR Meeting</title>");
             resp.getOutputStream().print("</head><body><div class=\"main\"><div class=\"logo\"></div><h1>"+this.join4+"</h1><p><a href=\""+meetingURL+"\">"+this.mail2+"</a><br><br>" + this.join5 + "<br><br><input type=\"text\" value=\""+meetingURL+"\"></p>");
         } catch (
                 Exception ex) {
